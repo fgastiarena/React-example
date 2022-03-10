@@ -1,4 +1,5 @@
 import React from 'react';
+import './effectsHijo.css';
 
 export const Hijo = React.memo(({ numero, incrementar }) => {
 
