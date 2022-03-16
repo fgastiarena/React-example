@@ -18,7 +18,11 @@ describe('Pruebas en useFetch', () => {
     test('Debe tener la info deseada, loading false, error false', async() => {
 
         const { result, waitForNextUpdate } = renderHook(() => useFetch(`https://www.breakingbadapi.com/api/quotes/1`));
+<<<<<<< HEAD
         await waitForNextUpdate({ timeout: 4000 });
+=======
+        await waitForNextUpdate({ timeout: 2000 });
+>>>>>>> 0e6033c699380b1797784af6824092feba58456c
         const { data, loading, error } = result.current;
 
         expect(data.length).toBe(1);
